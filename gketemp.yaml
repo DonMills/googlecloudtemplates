@@ -1,0 +1,14 @@
+imports:
+- path: gkecluster.py
+
+resources:
+- name: cluster
+  type: gkecluster.py
+  properties:
+    zone: us-east1-b
+    clustername: drmtest
+    clusterdesc: A test of templates
+    preemptible: true
+    initialcount: 2
+    username: admin
+    password: g00gl3t3st
