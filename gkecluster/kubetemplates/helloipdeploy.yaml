@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: helloip-deployment
+  labels:
+    app: helloip
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: helloip
+  template:
+    metadata:
+      labels:
+        app: helloip
+    spec:
+      containers:
+      - name: helloip
+        image: cthulu13/helloip:latest
+        ports:
+        - containerPort: 8080
