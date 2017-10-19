@@ -30,9 +30,10 @@ def GenerateConfig(context):
 							}
 					
 				}],
-     			'masterAuth': {
-       				'username': context.properties['username'],
-       				'password': context.properties['password']
+				'initialClusterVersion': '1.7.8',
+     				'masterAuth': {
+       					'username': context.properties['username'],
+       					'password': context.properties['password']
 				}
 			}
 		}
