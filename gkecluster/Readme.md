@@ -17,4 +17,6 @@ gkecluster.py - a python template version of the above
 
 gketemp.yaml - a config file that uses the template and sets the variables
 
-```gcloud container clusters describe drmtest -z us-east1-b | grep clusterCaCertificate```
+```gcloud deployment-manager deployments create testdeploygke --config gketemp.yaml```
+
+
