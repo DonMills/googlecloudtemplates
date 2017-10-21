@@ -10,3 +10,5 @@ https://github.com/DonMills/helloip
 kubectl apply -f ./helloipdeploy.yaml
 kubectl apply -f ./helloipservice.yaml
 ```
+
+
