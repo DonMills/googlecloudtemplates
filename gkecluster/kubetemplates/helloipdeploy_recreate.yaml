@@ -6,6 +6,8 @@ metadata:
     app: helloip
 spec:
   replicas: 2
+  strategy:
+   type: Recreate
   selector:
     matchLabels:
       app: helloip
