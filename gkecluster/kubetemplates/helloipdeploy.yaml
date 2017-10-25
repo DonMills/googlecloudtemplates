@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: helloip
-        image: gcr.io/drmtestproject-182723/helloip:v.02
+        image: gcr.io/drmtestproject-182723/helloip:v.03
         ports:
         - containerPort: 8080
