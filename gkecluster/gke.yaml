@@ -1,26 +1,25 @@
 resources:
 - name: cluster-1
   type: container.v1.cluster
-  properties: 
+  properties:
     zone: us-east1-b
-    cluster: 
-     name: drmtestcluster 
+    cluster:
+     name: drmtestcluster
      description: 'A test of templates'
-     nodePools: 
+     nodePools:
      - name: drmtestnp-useast1b
-       config: 
+       config:
          machineType: n1-standard-1
          diskSizeGb: 100
-         oauthScopes: 
+         oauthScopes:
           ["https://www.googleapis.com/auth/devstorage.read_only"]
          imageType: cos
          preemptible: true
        initialNodeCount: 2
-       management: 
+       management:
          autoUpgrade: true
          autoRepair: true
+     initialClusterVersion: 1.7.8
      masterAuth:
        username: admin
        password: googletest
-       
-     
