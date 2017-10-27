@@ -2,6 +2,8 @@ kind: Service
 apiVersion: v1
 metadata:
   name: helloip-service
+  labels:
+    app: helloip
 spec:
   selector:
     app: helloip
